@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Homepage"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Add Course -->
+    <Button
+        android:id="@+id/btnAddCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Course"
+        android:backgroundTint="#B39DDB"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- View Courses -->
+    <Button
+        android:id="@+id/btnViewCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Courses"
+        android:backgroundTint="#B39DDB"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Search -->
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:backgroundTint="#B39DDB"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Upload Data -->
+    <Button
+        android:id="@+id/btnUploadData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Data"
+        android:backgroundTint="#B39DDB"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_edit_class_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_class"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <!-- (Date) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etClassDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select date"
+        android:focusable="false"
+        android:clickable="true"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget" />
+
+    <!-- Error when choosing wrong date -->
+    <TextView
+        android:id="@+id/tvErrorDayOfWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Teacher -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter teacher's name"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Comments -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Additional comments (Optional)"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Save -->
+    <Button
+        android:id="@+id/btnSaveClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

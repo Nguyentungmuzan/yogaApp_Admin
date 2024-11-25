@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_edit_course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_course"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/spinnerDayOfWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/days_of_week"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TimePicker -->
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter time"
+        android:focusable="false"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Capacity -->
+    <EditText
+        android:id="@+id/etCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter capacity"
+        android:inputType="number"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Duration -->
+    <EditText
+        android:id="@+id/etDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter duration in minutes"
+        android:inputType="number"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Price -->
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter price"
+        android:inputType="numberDecimal"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Spinner for choosing course -->
+    <Spinner
+        android:id="@+id/spinnerTypeOfClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/type_of_class"
+        android:backgroundTint="@color/purple_500"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Description -->
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description (Optional)"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Save -->
+    <Button
+        android:id="@+id/btnSaveCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

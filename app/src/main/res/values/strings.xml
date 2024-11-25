@@ -1,0 +1,33 @@
+<!-- universalyogaapp/res/values/strings.xml -->
+<resources>
+    <string name="app_name">Universal Yoga</string>
+
+    <!-- Days of the week -->
+    <string-array name="days_of_week">
+        <item>Select Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <!-- Types of Class -->
+    <string-array name="type_of_class">
+        <item>Kundalini Yoga</item>
+        <item>Vinyasa Yoga</item>
+        <item>Hatha Yoga</item>
+        <item>Ashtanga Yoga</item>
+        <item>Yin Yoga</item>
+        <item>Iyengar Yoga</item>
+    </string-array>
+    <string name="Homepage">Homepage</string>
+    <string name="Search">Search</string>
+    <string name="add_class">Add Class</string>
+    <string name="edit_class">Edit Class</string>
+    <string name="add_course">Add Course</string>
+    <string name="edit_course">Edit Course</string>
+
+</resources>

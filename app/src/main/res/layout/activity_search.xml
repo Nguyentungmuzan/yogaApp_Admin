@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Search name teacher -->
+    <EditText
+        android:id="@+id/etTeacherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Teacher Name"
+        android:inputType="text"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Search Day of week or date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- AutoCompleteTextView -->
+        <AutoCompleteTextView
+            android:id="@+id/etDayOfWeekOrDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Day of Week/Date"
+            android:focusable="true"
+            android:backgroundTint="@color/purple_500"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Icon for Date Picker -->
+        <ImageButton
+            android:id="@+id/btnPickDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_today"
+            android:backgroundTint="@color/purple_500"
+            android:contentDescription="Pick Date"
+            android:layout_marginStart="8dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Search button -->
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Search result -->
+    <TextView
+        android:id="@+id/tvSearchResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Search Results"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Show search result -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+
+</LinearLayout>

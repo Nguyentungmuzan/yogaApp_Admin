@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:backgroundTint="@android:color/white">
+
+    <!-- Course information -->
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="course_name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_course_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="course_details_placeholder"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Function buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <!-- View button -->
+        <Button
+            android:id="@+id/btn_view_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="View"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <!-- Edit button -->
+        <Button
+            android:id="@+id/btn_edit_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginEnd="8dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Delete button -->
+        <Button
+            android:id="@+id/btn_delete_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_red_dark"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>

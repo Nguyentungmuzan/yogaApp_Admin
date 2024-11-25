@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_add_course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_course"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Day of the Week Spinner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <Spinner
+            android:id="@+id/spinner_day_of_week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/days_of_week"
+            android:backgroundTint="@color/purple_500"
+            android:padding="8dp" />
+
+        <!-- Icon warn for Day of Week -->
+        <TextView
+            android:id="@+id/error_icon_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#x26A0;"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:padding="8dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Time Picker -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Time (e.g. 10:00)"
+            android:focusable="false"
+            android:clickable="true"
+            android:backgroundTint="@color/purple_500"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,KeyboardInaccessibleWidget" />
+
+        <!-- Icon warn for Time -->
+        <TextView
+            android:id="@+id/error_icon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#x26A0;"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:padding="8dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Capacity -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/et_capacity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Capacity"
+            android:inputType="number"
+            android:backgroundTint="@color/purple_500"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Icon warn for Capacity -->
+        <TextView
+            android:id="@+id/error_icon_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#x26A0;"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:padding="8dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Duration -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/et_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Duration (minutes)"
+            android:inputType="number"
+            android:backgroundTint="@color/purple_500"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Icon warn for Duration -->
+        <TextView
+            android:id="@+id/error_icon_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#x26A0;"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:padding="8dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Price -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Price (e.g. 10.00)"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@color/purple_500"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Icon warn for Price -->
+        <TextView
+            android:id="@+id/error_icon_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#x26A0;"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:padding="8dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Type of Class Spinner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <Spinner
+            android:id="@+id/spinner_type_of_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/type_of_class"
+            android:backgroundTint="@color/purple_500"
+            android:padding="8dp" />
+
+        <!-- Icon warn for Type of Class -->
+        <TextView
+            android:id="@+id/error_icon_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#x26A0;"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:padding="8dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Description (Optional) -->
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description (Optional)"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btn_submit_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

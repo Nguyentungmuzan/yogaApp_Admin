@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "575785888776",
+    "firebase_url": "https://universalyoga-d925d-default-rtdb.firebaseio.com",
+    "project_id": "universalyoga-d925d",
+    "storage_bucket": "universalyoga-d925d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575785888776:android:66d367a1e30ea08a58f5bd",
+        "android_client_info": {
+          "package_name": "com.example.universalyoga"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_SwPzYiq_eAjz2_Cw2oLcvzZqeS6hazw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575785888776:android:d156a0d67b1d81f758f5bd",
+        "android_client_info": {
+          "package_name": "com.example.universalyogaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_SwPzYiq_eAjz2_Cw2oLcvzZqeS6hazw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575785888776:android:9fb6f6635b4c590f58f5bd",
+        "android_client_info": {
+          "package_name": "com.example.yoga_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_SwPzYiq_eAjz2_Cw2oLcvzZqeS6hazw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
